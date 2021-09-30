@@ -27,3 +27,12 @@ D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\obj\Debu
 D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\obj\Debug\net5.0\ref\backend-challenge.dll
 D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\obj\Debug\net5.0\backend-challenge.pdb
 D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\obj\Debug\net5.0\backend-challenge.genruntimeconfig.cache
+D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\bin\Debug\net5.0\Humanizer.dll
+D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\bin\Debug\net5.0\MySqlConnector.dll
+D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\bin\Debug\net5.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Arquivos HD\WEB II\EX 04\concert-backend-challenge\backend-challenge\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
