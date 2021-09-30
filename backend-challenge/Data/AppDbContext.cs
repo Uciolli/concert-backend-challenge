@@ -15,9 +15,8 @@ namespace backend_challenge.Data
 
     protected override void OnModelCreating( ModelBuilder modelBuilder)
     {   
-        /*modelBuilder.Entity<Empregado>()
-            .Property(p => p.telefone)
-                .HasMaxLength(10);*/
+        modelBuilder.Entity<Empregado>()
+            .HasKey(c => c.id_empregado);
 
         modelBuilder.Entity<Empregado>()
             .HasData(
