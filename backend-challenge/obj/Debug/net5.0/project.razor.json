@@ -15617,6 +15617,32 @@
     "CSharpLanguageVersion": 900
   },
   "RootNamespace": "backend_challenge",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "d:\\Arquivos HD\\WEB II\\EX 04\\concert-backend-challenge\\backend-challenge\\Views\\Empregado\\Edit.cshtml",
+      "TargetPath": "Views\\Empregado\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Arquivos HD\\WEB II\\EX 04\\concert-backend-challenge\\backend-challenge\\Views\\Empregado\\Delete.cshtml",
+      "TargetPath": "Views\\Empregado\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Arquivos HD\\WEB II\\EX 04\\concert-backend-challenge\\backend-challenge\\Views\\Empregado\\Details.cshtml",
+      "TargetPath": "Views\\Empregado\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Arquivos HD\\WEB II\\EX 04\\concert-backend-challenge\\backend-challenge\\Views\\Empregado\\Index.cshtml",
+      "TargetPath": "Views\\Empregado\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Arquivos HD\\WEB II\\EX 04\\concert-backend-challenge\\backend-challenge\\Views\\Empregado\\Create.cshtml",
+      "TargetPath": "Views\\Empregado\\Create.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

@@ -1,0 +1,42 @@
+@model backend_challenge.Data.Empregado
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Empregado</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.primeiro_nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.primeiro_nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ultimo_nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ultimo_nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.telefone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.telefone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.endereco)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.endereco)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id_empregado">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

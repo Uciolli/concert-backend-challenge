@@ -1,0 +1,53 @@
+@model IEnumerable<backend_challenge.Data.Empregado>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.primeiro_nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ultimo_nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.endereco)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.primeiro_nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ultimo_nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.endereco)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.id_empregado">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.id_empregado">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.id_empregado">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
