@@ -10,65 +10,65 @@ using backend_challenge.Data;
 namespace backend_challenge.Controllers
 {   
     [ApiController]
-    [Route("empregados")]
-    public class EmpregadoController : Controller
+    [Route("projetos")]
+    public class ProjetoController : Controller
     {
         private readonly AppDbContext _context;
 
-        public EmpregadoController(AppDbContext context)
+        public ProjetoController(AppDbContext context)
         {
             _context = context;
         }
 
-        // GET /empregados
+        // GET /projetos   
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Empregado>>> GetEmpregados()
+        public async Task<ActionResult<IEnumerable<Projeto>>> GetProjetos()
         {
-            return await _context.Empregados.ToListAsync();
+            return await _context.Projetos.ToListAsync();
         }
 
-        // GET /empregados/{id}
+        // GET /projetos/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<Empregado>> GetEmpregado(int? id)
+        public async Task<ActionResult<Projeto>> GetProjeto(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var empregado = await _context.Empregados
-                .FirstOrDefaultAsync(m => m.id_empregado == id);
-            if (empregado == null)
+            var projeto = await _context.Projetos
+                .FirstOrDefaultAsync(m => m.id_projeto == id);
+            if (projeto == null)
             {
                 return NotFound();
             }
 
-            return empregado;
+            return projeto;
         }
 
         
-        // POST /empregados
+        // POST /projetos
         [HttpPost]
-        public async Task<ActionResult<Empregado>> PostEmpregado(Empregado empregado)
+        public async Task<ActionResult<Projeto>> Postprojeto(Projeto projeto)
         {
            
-            _context.Add(empregado);
+            _context.Add(projeto);
             await _context.SaveChangesAsync();
                 
-            return empregado;
+            return projeto;
         }
 
         
-        // PUT /empregados/{id}
+        // PUT /projetos/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEmpregado(int id, Empregado empregado)
+        public async Task<IActionResult> PutProjeto(int id, Projeto projeto)
         {
-            if (id != empregado.id_empregado)
+            if (id != projeto.id_projeto)
             {
                 return NotFound();
             }
 
-            _context.Entry(empregado).State = EntityState.Modified;
+            _context.Entry(projeto).State = EntityState.Modified;
 
             try
             {
@@ -76,7 +76,7 @@ namespace backend_challenge.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if(!EmpregadoExists(id))
+                if(!ProjetoExists(id))
                 {
                     return NotFound();
                 }
@@ -90,26 +90,26 @@ namespace backend_challenge.Controllers
 
         }
         
-         //DELETE /empregados/{id}
+         //DELETE /projeto/{id}
          [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEmpregado(int? id)
+        public async Task<IActionResult> DeleteProjeto(int? id)
         {
-            var empregado = await _context.Empregados.FindAsync(id);
-            if(empregado == null)
+            var projeto = await _context.Projetos.FindAsync(id);
+            if(projeto == null)
             {
                 return NotFound();
             }
 
-            _context.Empregados.Remove(empregado);
+            _context.Projetos.Remove(projeto);
             await _context.SaveChangesAsync();
 
             return NoContent();
         }
 
         
-        private bool EmpregadoExists(int id)
+        private bool ProjetoExists(int id)
         {
-            return _context.Empregados.Any(e => e.id_empregado == id);
+            return _context.Projetos.Any(e => e.id_projeto == id);
         }
         
     }

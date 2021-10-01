@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace backend_challenge.Data
 {
     public class Empregado
@@ -7,5 +9,9 @@ namespace backend_challenge.Data
         public string ultimo_nome { get; set; }
         public int telefone { get; set; }
         public string endereco { get; set; }
+
+        public List<Projeto> Projetos { get; set;}
+
+        
     }
 }
