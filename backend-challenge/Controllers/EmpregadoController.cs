@@ -20,14 +20,14 @@ namespace backend_challenge.Controllers
             _context = context;
         }
 
-        // GET /empregados
+        // GET /empregados      Retorna todos os empregados
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Empregado>>> GetEmpregados()
         {
             return await _context.Empregados.ToListAsync();
         }
 
-        // GET /empregados/{id}
+        // GET /empregados/{id}     Retorna o empregado com a id especificada
         [HttpGet("{id}")]
         public async Task<ActionResult<Empregado>> GetEmpregado(int? id)
         {
@@ -47,8 +47,8 @@ namespace backend_challenge.Controllers
         }
 
         
-        // POST /empregados
-        [HttpPost]
+        // POST /empregados    Insere um novo empregado e retorna o empregado inserido para confirmacao
+        [HttpPost]              
         public async Task<ActionResult<Empregado>> PostEmpregado(Empregado empregado)
         {
            
@@ -59,7 +59,7 @@ namespace backend_challenge.Controllers
         }
 
         
-        // PUT /empregados/{id}
+        // PUT /empregados/{id}        Edita um empregado buscando pela id
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEmpregado(int id, Empregado empregado)
         {
@@ -90,7 +90,7 @@ namespace backend_challenge.Controllers
 
         }
         
-         //DELETE /empregados/{id}
+         //DELETE /empregados/{id}      Remove um projeto buscando pela id
          [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEmpregado(int? id)
         {
@@ -106,7 +106,7 @@ namespace backend_challenge.Controllers
             return NoContent();
         }
 
-        
+        // Metodo de verificacao da existencia de um empregado
         private bool EmpregadoExists(int id)
         {
             return _context.Empregados.Any(e => e.id_empregado == id);

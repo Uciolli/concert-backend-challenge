@@ -27,7 +27,7 @@ namespace backend_challenge.Controllers
             return await _context.Projetos.ToListAsync();
         }
 
-        // GET /projetos/{id}
+        // GET /projetos/{id}      Retorna o projeto com a id especificada
         [HttpGet("{id}")]
         public async Task<ActionResult<Projeto>> GetProjeto(int? id)
         {
@@ -47,7 +47,7 @@ namespace backend_challenge.Controllers
         }
 
         
-        // POST /projetos
+        // POST /projetos     Insere um novo projeto e retorna o projeto inserido para confirmacao
         [HttpPost]
         public async Task<ActionResult<Projeto>> Postprojeto(Projeto projeto)
         {
@@ -59,7 +59,7 @@ namespace backend_challenge.Controllers
         }
 
         
-        // PUT /projetos/{id}
+        // PUT /projetos/{id}      Edita um projeto buscando pela id
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProjeto(int id, Projeto projeto)
         {
@@ -90,7 +90,7 @@ namespace backend_challenge.Controllers
 
         }
         
-         //DELETE /projeto/{id}
+         //DELETE /projeto/{id}    Remove um projeto buscando pela id
          [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProjeto(int? id)
         {
@@ -106,7 +106,7 @@ namespace backend_challenge.Controllers
             return NoContent();
         }
 
-        
+        // Metodo de verificacao da existencia de um projeto
         private bool ProjetoExists(int id)
         {
             return _context.Projetos.Any(e => e.id_projeto == id);

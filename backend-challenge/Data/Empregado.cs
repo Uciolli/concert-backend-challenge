@@ -10,7 +10,7 @@ namespace backend_challenge.Data
         public int telefone { get; set; }
         public string endereco { get; set; }
 
-        public List<Projeto> Projetos { get; set;}
+        public List<Membro> Membros { get; set;}
 
         
     }

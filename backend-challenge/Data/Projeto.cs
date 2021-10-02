@@ -11,7 +11,7 @@ namespace backend_challenge.Data
         public string data_termino { get; set; }
 
         public int gerenteId { get; set; }
-        public Empregado gerente { get; set; }
+        public List<Membro> Membros { get; set;}
 
         
     }

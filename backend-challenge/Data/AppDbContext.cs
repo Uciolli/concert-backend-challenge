@@ -12,6 +12,7 @@ namespace backend_challenge.Data
 
         public DbSet<Empregado> Empregados { get; set;}
         public DbSet<Projeto> Projetos { get; set;}
+        public DbSet<Membro> Membros { get; set;}
         
 
     protected override void OnModelCreating( ModelBuilder modelBuilder)
@@ -39,7 +40,8 @@ namespace backend_challenge.Data
                new Projeto {id_projeto = 4, nome = "CRM", data_criacao = "2015-09-14", data_termino ="NULL", gerenteId = 5}
             );
 
-
+         modelBuilder.Entity<Membro>()
+                .HasKey(x => new { x.id_empregado, x.id_projeto});
         
     }
 }
