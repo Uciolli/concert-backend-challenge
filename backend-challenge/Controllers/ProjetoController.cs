@@ -20,7 +20,7 @@ namespace backend_challenge.Controllers
             _context = context;
         }
 
-        // GET /projetos   
+        // GET /projetos  Retorna todos os projetos 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Projeto>>> GetProjetos()
         {

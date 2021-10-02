@@ -37,7 +37,7 @@ namespace backend_challenge
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "backend_challenge", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "concert_backend_challenge", Version = "v1" });
             });
         }
 
