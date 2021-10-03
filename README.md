@@ -1,5 +1,6 @@
 # concert-backend-challenge
 Desafio técnico para a vaga de estagio back-end na Concert Technologies.
+A aplicação foi desenvolvida em C# utilizando o .Net Core, EF Core e o Pomelo Provider para MySql.
 
 # Como utilizar
 1. Clone o repositório
