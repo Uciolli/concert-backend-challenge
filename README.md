@@ -9,4 +9,4 @@ Desafio técnico para a vaga de estagio back-end na Concert Technologies.
 5. Para acessar a documentação do swagger acesse o endereço acima e navegue até /swagger/index.html
 6. Utilize algum banco MySql de sua preferencia
 7. Altere a string de conexão presente em appsettings.json linha 3 para conectar-se ao seu banco
-8. Enjoy!
+8. Enjoy! 😀
